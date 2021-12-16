@@ -53,11 +53,7 @@ it will be running on http://127.0.0.1:5000/
 
 	open localhost:4200 on your browser
 	
-	register as a user
-	
-	you will be logged in automatically
-	
-	Click on Fake News Detection
+	register as a new user, else login
 	
 	Enter a news string and click on "Check News"
 	
