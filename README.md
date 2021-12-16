@@ -5,7 +5,7 @@
   
 ## Prerequisites:
 
-	Angular Cli : 6.0.x
+	Angular CLI : 6.0.x
 	Node JS: 8.9.x
 	Python 3
 	
