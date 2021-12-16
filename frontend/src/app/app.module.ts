@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatIconModule} from '@angular/material/icon';
 import {
@@ -22,10 +22,12 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
 import { DialogComponent } from './dialog/dialog.component';
-const routes = [
-  { path: '', component: NewsComponent},
+const routes: Routes = [
+  { path: 'home', component: NewsComponent},
+  {path: '', redirectTo: '/login', pathMatch:'full'},
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent }
+  
 ];
 
 @NgModule({

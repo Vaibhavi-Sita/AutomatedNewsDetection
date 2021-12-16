@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card *ngIf="authService.isAuthenticated">
   <mat-card-header>
       <mat-card-title>
           <h3 style="text-align:center">Detect Fake News</h3>
@@ -15,8 +15,8 @@
   </mat-card-content>
 </mat-card>
 
-
-<mat-card *ngFor="let message of apiService.news.slice().reverse()">
+<div *ngIf="authService.isAuthenticated">
+<mat-card *ngFor="let message of apiService.news.slice().reverse()" >
    
         <mat-card-header>
                 <mat-card-title>
@@ -33,3 +33,17 @@
     <!-- <mat-card>{{message.news}}</mat-card>
    <p> {{message.fake}} </p> -->
   </mat-card>
+  </div>
+
+  
+  <div *ngIf="!authService.isAuthenticated">
+      <mat-card> 
+      <mat-card-header style="background-color: red">
+          <mat-card-title><h3>Incorrect Login! Kindly Login with the correct credentials</h3></mat-card-title></mat-card-header>
+          <button style="background-color: greenyellow" mat-raised-button *ngIf="!authService.isAuthenticated" routerLink="/login">
+           <h2>Login</h2>
+        </button>
+      </mat-card>
+      
+    </div>
+<router-outlet></router-outlet>
