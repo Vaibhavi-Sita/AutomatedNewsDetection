@@ -1,11 +1,15 @@
+
 <mat-card>
   <mat-card-header>
-      <mat-card-title>
+      <mat-card-title *ngIf="!authService.isAuthenticated">
           <h4>Register New User</h4>
       </mat-card-title>
+      <mat-card-title *ngIf="authService.isAuthenticated">
+        <h3>You are registered and logged in successfully</h3>
+    </mat-card-title>
   </mat-card-header>
   <mat-card-content>
-      <form>
+      <form *ngIf="!authService.isAuthenticated">
         <mat-form-field>
               <input [(ngModel)]="registerData.email" name="email" matInput placeholder="email" type="email">
             </mat-form-field>
@@ -17,11 +21,8 @@
               <input [(ngModel)]="registerData.name" name="name" matInput placeholder="name">
             </mat-form-field>
           <br>
-          <mat-form-field style="width: 100%">
-              <textarea [(ngModel)]="registerData.description" name="description" matInput placeholder="description"></textarea>
-            </mat-form-field>
-          <br>
           <button (click)="post()" mat-raised-button color="primary">Register</button>
       </form>
+      <button mat-raised-button style="background-color: greenyellow" *ngIf="authService.isAuthenticated" routerLink="/home">Check News</button>
   </mat-card-content>
 </mat-card>
