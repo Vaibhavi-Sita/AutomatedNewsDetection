@@ -27,7 +27,11 @@ def detecting_fake_news(var):
     ('Originally, Democrats promised that if you liked your health care plan, you could keep it. One year later we know that you need a waiver to keep your plan.', 'false'),
     ("We spend more money on antacids than we do on politics.", 'false'),
     ('Barack Obama and Joe Biden oppose new drilling at home and oppose nuclear power.', 'false'),
-    ('President Obama once said he wants everybody in America to go to college.', 'false')
+    ('President Obama once said he wants everybody in America to go to college.', 'false'),
+    ('Yogi inaugurates Kashi', 'false'),
+    ('Telangana reports Omicron cases', 'true'),
+    ('PM Modi inaugurates Kashi Vishwanath corridor in Varanasi', 'true'),
+    ('Yogi Adityanath inaugurates Kashi Vishwanath corridor in Varanasi', 'false')
     ]
     test = [
     ('Because of the steps we took, there are about 2 million Americans working right now who would otherwise be unemployed.', 'true'),
@@ -35,6 +39,7 @@ def detecting_fake_news(var):
     ("You cannot build a little guy up by tearing a big guy down -- Abraham Lincoln said it.", 'false'),
     ("One man opposed a flawed strategy in Iraq. One man had the courage to call for change. One man didn't play politics with the truth.", 'true'),
     ('When I was governor, not only did test scores improve we also narrowed the achievement gap.', 'true'),
+    ('Telangana reports Omicron cases', 'true'),
     ("Ukraine was a nuclear-armed state. They gave away their nuclear arms with the understanding that we would protect them.", 'false')
     ]   
 
