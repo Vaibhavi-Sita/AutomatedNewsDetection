@@ -11,15 +11,22 @@
 	
 ## Initial Steps:
 
-1. In Python shell 
+1. Install Nltk, Flask and TextBlob
+```
+pip install nltk
+pip install flask
+pip install textblob
+```
+ 
+2. In Python shell 
 ```python
 >>> import nltk
 >>> nltk.download('punkt')
 ```
 	
-2. Clone this project into your local
+3. Clone this project into your local
 	
-3. Open the project in a desired IDE (ex: VScode)
+4. Open the project in a desired IDE (ex: VScode)
 	
 **navigate to backend**
 ```node
