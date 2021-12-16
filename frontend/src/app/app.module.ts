@@ -26,7 +26,9 @@ const routes: Routes = [
   { path: 'home', component: NewsComponent},
   {path: '', redirectTo: '/login', pathMatch:'full'},
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  {path: '404', component: LoginComponent},
+  {path: '**', redirectTo: '/404'}
   
 ];
 
