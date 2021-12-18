@@ -35,7 +35,6 @@ def detecting_fake_news(var):
     ]
     test = [
     ('Because of the steps we took, there are about 2 million Americans working right now who would otherwise be unemployed.', 'true'),
-    ('Scientists project that the Arctic will be ice-free in the summer of 2018', 'false'),
     ("You cannot build a little guy up by tearing a big guy down -- Abraham Lincoln said it.", 'false'),
     ("One man opposed a flawed strategy in Iraq. One man had the courage to call for change. One man didn't play politics with the truth.", 'true'),
     ('When I was governor, not only did test scores improve we also narrowed the achievement gap.', 'true'),
