@@ -3,6 +3,9 @@
   The news that you have just read on your feed may or may not be entirely true. 
   This application helps you to check whether the news is **REAL** or **FAKE** using *ML/AI*!
   
+## DEMO : 
+https://automatednewsdetection.web.app/login
+
 ## Prerequisites:
 
 	Angular CLI : 6.0.x
