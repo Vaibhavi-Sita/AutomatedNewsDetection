@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
   
   loginData = {}
 
-  constructor(public authService: AuthService) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }

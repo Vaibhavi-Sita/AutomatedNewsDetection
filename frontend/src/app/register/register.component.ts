@@ -9,7 +9,7 @@ import { AuthService } from '../auth.service'
 export class RegisterComponent implements OnInit {
   registerData = {}
 
-  constructor(public authService: AuthService) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }

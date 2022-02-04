@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class NewsComponent implements OnInit {
 
-  constructor(private apiService: ApiService, public authService : AuthService, private router: Router) { }
+  constructor(private apiService: ApiService, private authService : AuthService, private router: Router) { }
 
   postNews = '';
   fakenews = '';
